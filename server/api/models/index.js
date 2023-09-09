@@ -1,21 +1,16 @@
-'use strict';
-
 const fs = require('fs');
 const path = require('path');
 const Sequelize = require('sequelize');
 const process = require('process');
 const basename = path.basename(__filename);
-const env = process.env.NODE_ENV || 'development';
-const config = require(__dirname + '/../config/config.json')[env];
+const config = require('../config/database.js');
 const db = {};
 
-let sequelize;
-if (config.use_env_variable) {
-  sequelize = new Sequelize(process.env[config.use_env_variable], config);
-} else {
-  sequelize = new Sequelize(config.database, config.username, config.password, config);
-}
 
+//Create Connection 
+let sequelize = new Sequelize(config.database, config.username, config.password, config);
+
+//Vinculation
 fs
   .readdirSync(__dirname)
   .filter(file => {
@@ -28,7 +23,9 @@ fs
   })
   .forEach(file => {
     const model = require(path.join(__dirname, file))(sequelize, Sequelize.DataTypes);
-    db[model.name] = model;
+    db[
+model.name
+] = model;
   });
 
 Object.keys(db).forEach(modelName => {
@@ -38,6 +35,6 @@ Object.keys(db).forEach(modelName => {
 });
 
 db.sequelize = sequelize;
-db.Sequelize = Sequelize;
+db.Sequelize = Sequelize; 
 
-module.exports = db;
+module.exports = db; 
