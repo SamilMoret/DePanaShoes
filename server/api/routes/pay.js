@@ -1,5 +1,5 @@
-//import Stripe from "stripe";//portal de pagos para conectarse a su api
-//const striper = Stripe('sk_test_51MXhMwE3qnA4gieV1zddEIRQEaSU2Ro4yVhovCZZGzuLKMvnkc1pmksgMB0B2hcPnogMWw4zzYAoiUK0trTZ7rCY00jHqdr6ZV');//clave de acceso stripe para recibir el pago
+import Stripe from "stripe";
+const striper = Stripe('sk_test_51Nm2bhAPurscdt1qyqDwoHxz4kpgNKNC0uGlT8TEZw3TLxAinRwcuLXnMXveb9wXASohmEY45htwwG1Ubxxt7vBO00zS5lDDq9');
 
 //router.post("/payment", (req,res)=>{
 //    let costumer = stripe.costumer
