@@ -1,18 +1,54 @@
-//import db from "../database/db.js";
-
-//import { DataTypes } from "sequelize";//Tipo de dados para cada atributo da base de dados
-
-//O modelo de todos os produtos extraindo todos seus campos
-const ProductModel = db.define ('productos',{
-    nombre: {type: DataTypes.STRING},
-    precio: {type: DataTypes.NUMBER},
-    descripcion: {type: DataTypes.TEXT},
-    img1: {type: DataTypes.TEXT},
-    img2: {type: DataTypes.TEXT},
-    img3: {type: DataTypes.TEXT},
-    stockMax: {type: DataTypes.INTEGER},
-    stockMin: {type: DataTypes.INTEGER},
-    stock: {type: DataTypes.INTEGER}
-});
-
-export default ProductModel;
+'use strict';
+const { Model } = require('sequelize');
+module.exports = (sequelize, DataTypes) => {
+class Productos extends Model {
+    static associate(models) {
+        //
+    }
+}
+Productos.init(
+    {
+    nombre: {
+        type: DataTypes.STRING,
+        allowNull: false
+    },
+    precio: {
+        type: DataTypes.INTEGER(128),
+        allowNull: false
+    },
+    descripcion: {
+        allowNull: false,
+        type: DataTypes.TEXT,
+    },
+    img1: {
+        allowNull: false,
+        type: DataTypes.TEXT,
+    },
+    img2: {
+        allowNull: false,
+        type: DataTypes.TEXT,
+    },
+    img3: {
+        allowNull: false,
+        type: DataTypes.TEXT,
+    },
+    stockMax: {
+        allowNull: false,
+        type: DataTypes.INTEGER,
+    },
+    stockMin: {
+        allowNull: false,
+        type: DataTypes.INTEGER,
+    },
+    stock: {
+        allowNull: false,
+        type: DataTypes.INTEGER,
+    },
+    },
+    {
+    sequelize,
+    modelName: 'Productos',
+    }
+);
+return Productos;
+};

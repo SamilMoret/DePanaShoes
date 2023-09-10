@@ -1,15 +1,18 @@
-//import express from "express";//Se importa express para facilitar la comunicacion con el servidor
-//import { bookProduct, buyProducts,getAllProducts,getProduct,createProduct,updateProducts,deleteProduct } from "../controllers/ProductControllers.js";//obteniendo todos los controladores ya creados para ser usados
+const express = require('express')//Se importa express para facilitar la comunicacion con el servidor
+const productsControllers = require('../controllers/ProductControllers');//obteniendo todos los controladores ya creados para ser usados
+
 const router = express.Router();
+//generacao de rutas para usar a api creada para interagir com a base de dados
+//diferentes rutas a usar com as diferentes funcoes
 
 //geracao de rutas para usar a api creada para interagir com a base de dados
 //diferentes rutas a usar com as diferentes funcoes
-router.get('/', getAllProducts)
-router.put('/buy', buyProducts)
-router.get('/book/:id', bookProduct)
-router.get('/:id', getProduct)
-router.post('/', createProduct)
-router.put('/:id', updateProducts)
-router.delete('/:id', deleteProduct)
+router.get('/products', productsControllers.getAllProducts);
+router.put('/products/buy', productsControllers.buyProducts);
+router.get('/products/shoes/:id', productsControllers.shoesProduct);
+router.get('/products/:id', productsControllers.getProduct);
+router.post('/products', productsControllers.createProduct);
+router.put('/products/:id', productsControllers.updateProducts);
+router.delete('/products/:id', productsControllers.deleteProduct);
 
-export default router;
+module.exports = router;

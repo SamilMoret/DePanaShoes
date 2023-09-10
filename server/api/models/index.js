@@ -3,6 +3,7 @@ const path = require('path');
 const Sequelize = require('sequelize');
 const process = require('process');
 const basename = path.basename(__filename);
+const env = process.env.NODE_ENV || 'development';
 const config = require('../config/database.js');
 const db = {};
 
@@ -22,10 +23,12 @@ fs
     );
   })
   .forEach(file => {
-    const model = require(path.join(__dirname, file))(sequelize, Sequelize.DataTypes);
-    db[
-model.name
-] = model;
+    try {
+      const model = require(path.join(__dirname, file))(sequelize, Sequelize.DataTypes);
+      db[model.name] = model;
+    } catch (error) {
+      console.error(`Error importing model from file ${file}:`, error);
+    }
   });
 
 Object.keys(db).forEach(modelName => {

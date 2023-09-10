@@ -1,20 +1,21 @@
-//import UserModel from "../models/UserModel.js";
+const database = require('../models');
+const sequelize = require('sequelize')
 
 
 //Comando para obter todos os usuarios do formato json
-export const getAllUsers = async (req,res) => {
+const getAllUsers = async (req,res) => {
     try {
-        const Users  = await UserModel.findAll()
-        res.json(Users)
+        const User  = await database.Users.findAll()
+        res.json(User)
     } catch (error) {
         res.json({message: error.message})
     }
 }
 
 // Se crea um registro de usuario
-export const createUser = async (req,res) => {
+const createUser = async (req,res) => {
     try {
-        await UserModel.create(req.body)
+        await database.Users.create(req.body)
         res.json({
             'message': 'registro creado'
         })
@@ -24,9 +25,9 @@ export const createUser = async (req,res) => {
 }
 
 //Se atualiza um usuario especifico
-export const updateUser = async (req,res) =>{
+const updateUser = async (req,res) =>{
     try {
-        await UserModel.update(req.body, {
+        await database.Users.update(req.body, {
             where: {id: req.params.id}
         })
         res.json({
@@ -38,9 +39,9 @@ export const updateUser = async (req,res) =>{
 }
 
 //Se obtem um usuario especifico
-export const getUser = async (req,res) => {
+const getUser = async (req,res) => {
     try {
-       const user = await UserModel.findAll({
+    const user = await database.Users.findAll({
             where:{ id:req.params.id }
         })
         res.json(user[0])
@@ -48,3 +49,10 @@ export const getUser = async (req,res) => {
         res.json( {message: error.message} )
     }
 }
+
+module.exports = {
+    getAllUsers,
+    createUser,
+    updateUser,
+    getUser
+};

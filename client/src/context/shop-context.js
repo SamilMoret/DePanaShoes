@@ -42,12 +42,12 @@ export const ShopContextProvider = (props) => {
                 totalAmount += cartItems[item] * itemInfo.preco; 
             }
         }
- 
+
         return totalAmount;
     };
 
     const addToCart = async (itemId) => { 
-        await axios.get('http://localhost:3001/products/book/'+ itemId + '?f=book')
+        await axios.get('http://localhost:3001/products/shoes/'+ itemId + '?f=book')
         .then(({ data }) => {
             data==='Booked' ? setCartItems((prev) => ({...prev, [itemId]: prev[itemId] + 1 })) : void(0);
             data==='Stockout' ? alert('Empty product') : void(0); 
@@ -58,7 +58,7 @@ export const ShopContextProvider = (props) => {
     };
 
     const removeFromCart = async (itemId) => {
-        await axios.get('http://localhost:3001/products/book/'+ itemId + '?f=unbook')
+        await axios.get('http://localhost:3001/products/shoes/'+ itemId + '?f=unbook')
         .then(({ data }) => {
             data==='Unbooked' ? setCartItems((prev) => ({...prev, [itemId]: prev[itemId] - 1 })) : void(0);
         })

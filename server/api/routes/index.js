@@ -1,6 +1,11 @@
 const bodyParser = require('body-parser')
+const users = require('./routersUsers')
+const productos = require('./routersProducts')
 
 module.exports = app => {
-    app.use(bodyParser.json())
-    app.get('/', (req, res) => res.send('Ola!'))
+    app.use(
+        bodyParser.json(),
+        users,
+        productos
+    )
 } 
