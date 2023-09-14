@@ -42,7 +42,3 @@ return database.Productos.findAll({
 })
 
 
-module.exports = {
-  productsStock,
-  productMinStock
-}

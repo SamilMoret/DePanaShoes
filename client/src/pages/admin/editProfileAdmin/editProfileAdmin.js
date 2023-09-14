@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import axios from 'axios';
 import { useState } from "react";
 
-const URIADMIN = 'http://localhost:3001/users/3/'; 
+const URIADMIN = 'http://localhost:3001/users/1/'; 
 
 const EditAdmin = () => {
     const [password, setPassword] = useState('');

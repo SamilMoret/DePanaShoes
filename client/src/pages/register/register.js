@@ -44,23 +44,23 @@ const Register = () => {
                 <input 
                 value={name}
                 onChange={ (e) => users.find(event => event.username === e.target.value) ? navigateRegister() : setName(e.target.value)}
-                type="text" name="user" id="user" placeholder="user"/>
+                type="text" name="user" id="user" placeholder="user" required/>
                 <input 
                 value={password}
                 onChange={ (e) => setPassword((e.target.value))}
-                type="password" name="pass" id="pass" placeholder="password"/>
+                type="password" name="pass" id="pass" placeholder="password" required/>
                 <input 
                 value={adress}
                 onChange={ (e) => setAdress(e.target.value)}
-                type="text" name="pass" id="pass" placeholder="adress"/>
+                type="text" name="pass" id="pass" placeholder="adress" required/>
                 <input 
                 value={telephone}
                 onChange={ (e) => setTelephone(e.target.value)}
-                type="text" name="pass" id="pass" placeholder="telephone"/>
+                type="text" name="pass" id="pass" placeholder="telephone" required/>
                 <input 
                 value={email}
                 onChange={ (e) => setEmail(e.target.value)}
-                type="text" name="pass" id="pass" placeholder="email"/>
+                type="text" name="pass" id="pass" placeholder="email" required/>
                 <input type="submit" className="btn-login" value="register" />
             </form>
         </div>

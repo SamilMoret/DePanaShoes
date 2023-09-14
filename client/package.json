@@ -3,10 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "dev": "react-scripts start"
   },
   "dependencies": {
     "@stripe/react-stripe-js": "^2.2.0",
@@ -23,5 +20,17 @@
     "react-scripts": "^5.0.1",
     "sequelize": "^6.33.0",
     "web-vitals": "^3.4.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

@@ -4,7 +4,7 @@ import { Navbar } from "./components/navbar.js";
 import { Shop } from './pages/shop/shop'
 import { Cart } from './pages/cart/cart' 
 import { ShopContextProvider } from "./context/shop-context";
-import { ShopAddtoCart } from "./pages/shopAddtoCart/shopAddtoCart";
+import { ShopAddtoCart } from "./pages/shopAddtoCart/shopAddtoCard";
 import Login from "./pages/login/login.js";
 import Register from "./pages/register/register.js";
 import EditAdmin from "./pages/admin/editProfileAdmin/editProfileAdmin";
