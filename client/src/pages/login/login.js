@@ -57,11 +57,11 @@ const Login = () => {
                 <input 
                     value={entrada} 
                     onChange={(e) => SetEntrada(e.target.value)}
-                    type="text" name="user" id="user" placeholder="user" />
+                    type="text" name="user" id="user" placeholder="usuario" required/>
                 <input 
                     value={entradaP} 
                     onChange={(e) => SetEntradaP((e.target.value))}  
-                    type="password" name="pass" id="pass" placeholder="password" />
+                    type="password" name="pass" id="pass" placeholder="password" required/>
                 <input type="submit" className="btn-login" value="Login" onClick={(e) => { 
                     e.preventDefault();
                     if(compare()) 
@@ -78,7 +78,7 @@ const Login = () => {
                     else
                          navigateLogin() }}/>
             </form>
-            <div href="register" className="btn-register" onClick={navigateRegister}>register</div> 
+            <div href="register" className="btn-register" onClick={navigateRegister}>Cadastro</div> 
         </div>
     )
 }

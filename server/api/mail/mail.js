@@ -1,6 +1,6 @@
-//import nodemailer from 'nodemailer'; //se improta la libreria nodemailer que permite el facil envio de correo
+import nodemailer from 'nodemailer'; 
 
-//protocolo de transferencia de e-mail
+
 const transporter = nodemailer.createTransport({
     host: 'smtp.gmail.com',
     port: 587,
@@ -10,7 +10,7 @@ const transporter = nodemailer.createTransport({
     }
 });
 
-//funcao que envia o e-mail com o conteudo usando a libreria de mailer
+
 
 export const sendMail = prod => {
     transporter.sendMail({

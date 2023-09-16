@@ -7,12 +7,12 @@ import { useState, useEffect } from "react";
 const URI = 'http://localhost:3001/users/'; 
 
 const Register = () => {
-    const [name, setName] = useState(''); 
-    const [password, setPassword] = useState('');
-    const [adress, setAdress] = useState('');
-    const [telephone, setTelephone] = useState('');
+    const [nome, setNome] = useState(''); 
+    const [senha, setSenha] = useState('');
+    const [endereco, setEndereco] = useState('');
+    const [telefone, setTelefone] = useState('');
     const [email, setEmail] = useState('');
-    const [users, setUsers] = useState([]);
+    const [usuario, setUsuario] = useState([]);
     const navigate = useNavigate();
     const navigateLogin = () => {
         navigate(`/login`);//envia al login
@@ -28,12 +28,12 @@ const Register = () => {
 
     const getUsers = async() => {
         const res = await axios.get(URI)
-        setUsers(res.data)
+        setUsuario(res.data)
     }
 
     const store = async (e) => { 
         e.preventDefault();
-        await axios.post(URI, {user_name: name, password: password, adress: adress, telephone: telephone, email: email });
+        await axios.post(URI, {nome_usuario: nome, senha: senha, endereco: endereco, telefone: telefone, email: email });
         navigateLogin();
     }
 
@@ -42,21 +42,21 @@ const Register = () => {
             <h2>register</h2>
             <form onSubmit={store} action="/auth" method="post"> 
                 <input 
-                value={name}
-                onChange={ (e) => users.find(event => event.username === e.target.value) ? navigateRegister() : setName(e.target.value)}
-                type="text" name="user" id="user" placeholder="user" required/>
+                value={nome}
+                onChange={ (e) => users.find(event => event.username === e.target.value) ? navigateRegister() : setNome(e.target.value)}
+                type="text" name="user" id="user" placeholder="usuario" required/>
                 <input 
-                value={password}
+                value={senha}
                 onChange={ (e) => setPassword((e.target.value))}
-                type="password" name="pass" id="pass" placeholder="password" required/>
+                type="senha" name="pass" id="pass" placeholder="senha" required/>
                 <input 
-                value={adress}
-                onChange={ (e) => setAdress(e.target.value)}
-                type="text" name="adress" id="adress" placeholder="adress" required/>
+                value={endereco}
+                onChange={ (e) => setEndereco(e.target.value)}
+                type="text" name="adress" id="adress" placeholder="endereco" required/>
                 <input 
-                value={telephone}
-                onChange={ (e) => setTelephone(e.target.value)}
-                type="number" min ='0' name="telephone" id="tel" placeholder="telephone" required/>
+                value={telefone}
+                onChange={ (e) => setTelefone(e.target.value)}
+                type="number" min ='0' name="telefone" id="tel" placeholder="telefone" required/>
                 <input 
                 value={email}
                 onChange={ (e) => setEmail(e.target.value)}

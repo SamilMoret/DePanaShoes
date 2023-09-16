@@ -67,11 +67,11 @@ export default function PaymentForm() {
                     <CardElement options={CARD_OPTIONS}/>
                 </div>
             </fieldset>
-            <button className="pay">Pay</button> 
+            <button className="pay">Pagar</button> 
         </form>
         :
         <div>
-            <h2>succesful purchase</h2>
+            <h2>Compra ben sucedida</h2>
         </div>
         }
         </>

@@ -36,13 +36,13 @@ export const Product = (props) => {
                 <form onSubmit={update} action="/auth" method="post"> 
                     <input 
                     onChange={ (e) => setPrice(e.target.value)} 
-                    type="text" name="pass" id="pass" placeholder="New Prize"/>
+                    type="text" name="pass" id="pass" placeholder="Novo Preco"/>
                     <input 
                     onChange={ (e) => setMaxS(e.target.value)} 
-                    type="text" name="pass" id="pass" placeholder="New MaxStock"/>
+                    type="text" name="pass" id="pass" placeholder="Novo MaxStock"/>
                     <input 
                     onChange={ (e) => setMinS(e.target.value)} 
-                    type="text" name="pass" id="pass" placeholder="New MinStock"/>
+                    type="text" name="pass" id="pass" placeholder="Novo MinStock"/>
                     <input type="submit" className="btn-login" value="Edit" /> 
                     <input type="file" id="inputImage" accept="image/*" onChange={(event)=> {
             const file = event.target.files[0];

@@ -8,10 +8,9 @@ const config = require('../config/database.js');
 const db = {};
 
 
-//Create Connection 
+ 
 let sequelize = new Sequelize(config.database, config.username, config.password, config);
 
-//Vinculation
 fs
   .readdirSync(__dirname)
   .filter(file => {

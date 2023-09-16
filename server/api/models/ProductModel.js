@@ -8,15 +8,15 @@ class Productos extends Model {
 }
 Productos.init(
     {
-    nombre: {
+    nome: {
         type: DataTypes.STRING,
         allowNull: false
     },
-    precio: {
+    preco: {
         type: DataTypes.INTEGER(128),
         allowNull: false
     },
-    descripcion: {
+    descricao: {
         allowNull: false,
         type: DataTypes.TEXT,
     },

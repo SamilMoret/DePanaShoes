@@ -5,7 +5,7 @@
 const database = require('../models');
 const sequelize = require('sequelize')
 
-//mostrar todos os registros
+
 const getAllProducts = async (req,res) => {
     try {
         const products  = await database.Productos.findAll()
@@ -15,7 +15,7 @@ const getAllProducts = async (req,res) => {
     }
 }
 
-//mostrar um registro
+
 const getProduct = async (req,res) => {
     try {
     const product = await database.Productos.findAll({
@@ -27,32 +27,32 @@ const getProduct = async (req,res) => {
     }
 }
 
-// crear um registro
+
 const createProduct = async (req,res) => {
     try {
         await database.Productos.create(req.body)
         res.json({
-            'message': 'registro creado'
+            'message': 'registro criado'
         })
     } catch (error) {
         res.json( {message: error.message})
     }
 }
 
-//atualizar registro
+
 const updateProducts = async (req,res) =>{
     try {
         await database.Productos.update(req.body, {
             where: {id: req.params.id}
         })
         res.json({
-            'message': 'registro actualizado'
+            'message': 'registro atualizado'
         })
     } catch (error) {
         res.json( {message: error.message})
     }
 }
-//eliminar registro
+
 
 const deleteProduct = async (req,res) =>{
     try {
@@ -60,14 +60,14 @@ const deleteProduct = async (req,res) =>{
             where: {id: req.params.id}
         })
         res.json({
-            'message': 'registro borrado'
+            'message': 'registro excluido'
         })
     } catch (error) {
         res.json( {message: error.message})
     }
 }
 
-//reservar ou nao reservar produtos por meio de um click ao carrinho
+
 
 const shoesProduct = async (req, res) => {
     try {
@@ -86,7 +86,7 @@ const shoesProduct = async (req, res) => {
     }
 }
 
-//Se atualiza o contenduo da base de dados
+
 const updateContent = async (product, quantity) => {
     const stock = await database.Productos.findAll({
         attributes: ['id', 'stock'],
@@ -100,7 +100,7 @@ const updateContent = async (product, quantity) => {
         sendMail({id: product});
     }
 }
-//Se compram os produtos e usamos updatecontent para atualizar o conteudo de cada um
+
 const buyProducts = async (req, res) => {
     try {
         console.log(typeof(req.body));
