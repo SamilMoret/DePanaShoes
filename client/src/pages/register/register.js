@@ -39,29 +39,29 @@ const Register = () => {
 
     return (
         <div className="register-form">
-            <h2>register</h2>
+            <h2>Cadastro</h2>
             <form onSubmit={store} action="/auth" method="post"> 
                 <input 
                 value={nome}
                 onChange={ (e) => users.find(event => event.username === e.target.value) ? navigateRegister() : setNome(e.target.value)}
-                type="text" name="user" id="user" placeholder="usuario" required/>
+                type="text" name="user" id="user" placeholder="Usuario" required/>
                 <input 
                 value={senha}
                 onChange={ (e) => setPassword((e.target.value))}
-                type="senha" name="pass" id="pass" placeholder="senha" required/>
+                type="password" name="pass" id="pass" placeholder="Senha" required/>
                 <input 
                 value={endereco}
                 onChange={ (e) => setEndereco(e.target.value)}
-                type="text" name="adress" id="adress" placeholder="endereco" required/>
+                type="text" name="adress" id="adress" placeholder="Endereço" required/>
                 <input 
                 value={telefone}
                 onChange={ (e) => setTelefone(e.target.value)}
-                type="number" min ='0' name="telefone" id="tel" placeholder="telefone" required/>
+                type="text" min ='0' name="Telefone" id="tel" placeholder="Telefone" required/>
                 <input 
                 value={email}
                 onChange={ (e) => setEmail(e.target.value)}
-                type="email" name="email" id="email" placeholder="email" required/>
-                <input type="submit" className="btn-login" value="register" />
+                type="text" name="email" id="email" placeholder="Email" required/>
+                <input type="submit" className="btn-login" value="Cadastrar" />
             </form>
         </div>
     )

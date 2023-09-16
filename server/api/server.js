@@ -24,21 +24,21 @@ app.listen(port, async () => {
   })
 }); 
 
-//usando el modelo de productos, encuentra a todos los productos y devuelve sus correspondientes atributos y se guarda en el objeto en products
+
 return database.Productos.findAll({
   attributes: ['id', 'stock', 'stockMin', 'nombre']
 })
 
 .then( products => {
-  let productsStock = {}//objeto para guardar el stock minmo de los productos
-  let productMinStock = {}//objeto para guardar el stock minimo de los productos
+  let productsStock = {}
+  let productMinStock = {}
   
-  //para cada producto obtenido, 
+   
   products.forEach(product => {
-    productsStock[product.dataValues.id] = product.dataValues.stock;//se le asigna el id correspondiente al producto y a su vez el valor del stock en forma de objeto
+    productsStock[product.dataValues.id] = product.dataValues.stock;
   });
   products.forEach(product => {
-    productMinStock[product.dataValues.id] = {stockMin: product.dataValues.stockMin, nombre: product.dataValues.nombre};//se le asigna el id correspondiente al producto y a su vez el valor minimo del stock en forma de objeto, junto con el nomrbe
+    productMinStock[product.dataValues.id] = {stockMin: product.dataValues.stockMin, nombre: product.dataValues.nombre};
   });
   console.log(productMinStock);
 })

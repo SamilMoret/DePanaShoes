@@ -2,7 +2,7 @@ const database = require('../models');
 const sequelize = require('sequelize')
 
 
-//Comando para obter todos os usuarios do formato json
+
 const getAllUsers = async (req,res) => {
     try {
         const User  = await database.Users.findAll()
@@ -12,7 +12,7 @@ const getAllUsers = async (req,res) => {
     }
 }
 
-// Se crea um registro de usuario
+
 const createUser = async (req,res) => {
     try {
         await database.Users.create(req.body)
@@ -24,7 +24,7 @@ const createUser = async (req,res) => {
     }
 }
 
-//Se atualiza um usuario especifico
+
 const updateUser = async (req,res) =>{
     try {
         await database.Users.update(req.body, {
@@ -38,7 +38,7 @@ const updateUser = async (req,res) =>{
     }
 }
 
-//Se obtem um usuario especifico
+
 const getUser = async (req,res) => {
     try {
     const user = await database.Users.findAll({

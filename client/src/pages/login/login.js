@@ -52,7 +52,7 @@ const Login = () => {
 
     return (
         <div className="login-form">
-            <h2>Login</h2>
+            <h2>Conecte-se</h2>
             <form onSubmit={compare}> 
                 <input 
                     value={entrada} 
@@ -61,7 +61,7 @@ const Login = () => {
                 <input 
                     value={entradaP} 
                     onChange={(e) => SetEntradaP((e.target.value))}  
-                    type="password" name="pass" id="pass" placeholder="password" required/>
+                    type="password" name="pass" id="pass" placeholder="senha" required/>
                 <input type="submit" className="btn-login" value="Login" onClick={(e) => { 
                     e.preventDefault();
                     if(compare()) 

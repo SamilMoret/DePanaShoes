@@ -10,6 +10,9 @@
 
 .register-form h2 {
     color: gray;
+    text-align: center;
+    margin: 3.5vmin;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .btn-cancel{
