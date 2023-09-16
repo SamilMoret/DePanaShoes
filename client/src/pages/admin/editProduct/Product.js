@@ -9,11 +9,12 @@ export const Product = (props) => {
     const [priceHook, setPrice] = useState(''); 
     const [maxStock, setMaxS] = useState('');
     const [minStock, setMinS] = useState('');
+    const [image, setImage] = useState()
     
 
     const update = async (e) => { 
         e.preventDefault();
-        await axios.put(URI+id+'/', { preco: priceHook, stockMax: maxStock, stockMin: minStock });
+        await axios.put(URI+id+'/', { preco: priceHook, stockMax: maxStock, stockMin: minStock, img1:image });
     }
 
     return (
@@ -43,6 +44,17 @@ export const Product = (props) => {
                     onChange={ (e) => setMinS(e.target.value)} 
                     type="text" name="pass" id="pass" placeholder="New MinStock"/>
                     <input type="submit" className="btn-login" value="Edit" /> 
+                    <input type="file" id="inputImage" accept="image/*" onChange={(event)=> {
+            const file = event.target.files[0];
+            const reader = new FileReader();
+
+            reader.onloadend = ()=> {
+                const base64 = reader.result;
+                setImage(base64)
+            };
+
+            reader.readAsDataURL(file);
+        }}/>
                 </form>
             </div>
         </div> 

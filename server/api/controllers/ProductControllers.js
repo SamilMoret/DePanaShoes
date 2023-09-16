@@ -9,7 +9,7 @@ const sequelize = require('sequelize')
 const getAllProducts = async (req,res) => {
     try {
         const products  = await database.Productos.findAll()
-        res.json(products)
+        res.status(200).json(products)
     } catch (error) {
         res.json({message: error.message})
     }

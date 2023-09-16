@@ -3,10 +3,12 @@ const { sequelize } = require('./models');
 const database = require('./models');
 const port = process.env.port || 3001;
 const app = express();
+const cors = require("cors")
 const routes = require('./routes');
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
+app.use(cors())
 routes(app);
 
 app.listen(port, async () => {

@@ -3,7 +3,7 @@ import axios from 'axios';
 import { useEffect } from 'react';
 
 export const ShopContext = createContext(null);
-const URI = 'http://localhost:3001/products/';
+const URI = 'http://localhost:3001/products';
 
 const getDefaultCart = () => {
     let cart = {}
@@ -30,7 +30,7 @@ export const ShopContextProvider = (props) => {
     
     const getProducts = async () => {
         const res = await axios.get(URI)
-        setProducts(res.data);
+        setProducts(res);
 
     }
 

@@ -53,7 +53,7 @@ const Login = () => {
     return (
         <div className="login-form">
             <h2>Login</h2>
-            <form onSubmit={compare()}> 
+            <form onSubmit={compare}> 
                 <input 
                     value={entrada} 
                     onChange={(e) => SetEntrada(e.target.value)}

@@ -52,15 +52,15 @@ const Register = () => {
                 <input 
                 value={adress}
                 onChange={ (e) => setAdress(e.target.value)}
-                type="text" name="pass" id="pass" placeholder="adress" required/>
+                type="text" name="adress" id="adress" placeholder="adress" required/>
                 <input 
                 value={telephone}
                 onChange={ (e) => setTelephone(e.target.value)}
-                type="text" name="pass" id="pass" placeholder="telephone" required/>
+                type="number" min ='0' name="telephone" id="tel" placeholder="telephone" required/>
                 <input 
                 value={email}
                 onChange={ (e) => setEmail(e.target.value)}
-                type="text" name="pass" id="pass" placeholder="email" required/>
+                type="email" name="email" id="email" placeholder="email" required/>
                 <input type="submit" className="btn-login" value="register" />
             </form>
         </div>
