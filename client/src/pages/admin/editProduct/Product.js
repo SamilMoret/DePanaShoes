@@ -6,15 +6,17 @@ const URI = 'http://localhost:3001/products/';
 
 export const Product = (props) => {
     const { id, nome, preco, img1, img2, img3, stockMax, stockMin } = props.data; 
-    const [priceHook, setPrice] = useState(''); 
-    const [maxStock, setMaxS] = useState('');
-    const [minStock, setMinS] = useState('');
-    const [image, setImage] = useState()
+    const [priceHook, setPrice] = useState(preco); 
+    const [maxStock, setMaxS] = useState(stockMax);
+    const [minStock, setMinS] = useState(stockMin);
+    const [newimg1, setNewimg1] = useState()
+    const [newimg2, setNewimg2] = useState()
+    const [newimg3, setNewimg3] = useState()
     
 
     const update = async (e) => { 
         e.preventDefault();
-        await axios.put(URI+id+'/', { preco: priceHook, stockMax: maxStock, stockMin: minStock, img1:image });
+        await axios.put(URI+id, { preco: priceHook, stockMax: maxStock, stockMin: minStock, img1:newimg1, img2:newimg2, img3:newimg3 });
     }
 
     return (
@@ -36,25 +38,17 @@ export const Product = (props) => {
                 <form onSubmit={update} action="/auth" method="post"> 
                     <input 
                     onChange={ (e) => setPrice(e.target.value)} 
-                    type="text" name="pass" id="pass" placeholder="Novo Preco"/>
+                    type="number" name="pass" id="pass" placeholder="Novo Preco"/>
                     <input 
                     onChange={ (e) => setMaxS(e.target.value)} 
-                    type="text" name="pass" id="pass" placeholder="Novo MaxStock"/>
+                    type="number" name="pass" id="pass" placeholder="Novo MaxStock"/>
                     <input 
                     onChange={ (e) => setMinS(e.target.value)} 
-                    type="text" name="pass" id="pass" placeholder="Novo MinStock"/>
+                    type="number" name="pass" id="pass" placeholder="Novo MinStock"/>
                     <input type="submit" className="btn-login" value="Edit" /> 
-                    <input type="file" id="inputImage" accept="image/*" onChange={(event)=> {
-            const file = event.target.files[0];
-            const reader = new FileReader();
-
-            reader.onloadend = ()=> {
-                const base64 = reader.result;
-                setImage(base64)
-            };
-
-            reader.readAsDataURL(file);
-        }}/>
+                   <input type="text" onChange={(e)=> setNewimg1(e.target.value)} placeholder="îmage 1" />
+                   <input type="text" onChange={(e)=> setNewimg2(e.target.value)} placeholder="îmage 2" />
+                   <input type="text" onChange={(e)=> setNewimg3(e.target.value)} placeholder="îmage 3" />
                 </form>
             </div>
         </div> 

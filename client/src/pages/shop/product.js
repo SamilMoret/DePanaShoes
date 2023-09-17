@@ -1,7 +1,7 @@
 import React from "react";
 
 export const Product = (props) => {
-    const { nome, preco, descripcao, img1, img2, img3 } = props.data; 
+    const { nome, preco, descricao, img1, img2, img3 } = props.data; 
     return (
         <div className="product"> 
             <div className="slide-var">
@@ -12,13 +12,13 @@ export const Product = (props) => {
                 </ul>
             </div>
             <div className="descripcion">
-                <p>{descripcao}</p>
+                <p>{descricao}</p>
             </div>
             <div className="description"> 
                 <p> 
                     <b>{nome}</b> 
                 </p>
-                <p> ${preco}</p>
+                <p> R${preco}</p>
             </div>
         </div> 
     );

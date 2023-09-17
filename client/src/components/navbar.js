@@ -25,9 +25,9 @@ export const Navbar = () => {
                     </Link>
                 </div>
             :
-            <div className="links"> {/*si el usuario es admin envia hacia el editor del inventario y hacia el editor del perfil del administrador*/}
-                    <Link to="/editInventory"> Products </Link>
-                    <Link to="/editAdmin"> Admin Profile </Link>
+            <div className="links"> 
+                    <Link to="/editInventory"> Produtos </Link>
+                    <Link to="/editAdmin"> Perfil de Administrador </Link>
                 </div>
         }
         </div>

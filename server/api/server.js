@@ -26,7 +26,7 @@ app.listen(port, async () => {
 
 
 return database.Productos.findAll({
-  attributes: ['id', 'stock', 'stockMin', 'nombre']
+  attributes: ['id', 'stock', 'stockMin', 'nome']
 })
 
 .then( products => {
@@ -38,7 +38,7 @@ return database.Productos.findAll({
     productsStock[product.dataValues.id] = product.dataValues.stock;
   });
   products.forEach(product => {
-    productMinStock[product.dataValues.id] = {stockMin: product.dataValues.stockMin, nombre: product.dataValues.nombre};
+    productMinStock[product.dataValues.id] = {stockMin: product.dataValues.stockMin, nome: product.dataValues.nome};
   });
   console.log(productMinStock);
 })

@@ -9,9 +9,9 @@ const sequelize = require('sequelize')
 const getAllProducts = async (req,res) => {
     try {
         const products  = await database.Productos.findAll()
-        res.status(200).json(products)
+        res.status(200).json({data:products, message: "produtos encontrados"})
     } catch (error) {
-        res.json({message: error.message})
+        res.json({data:[],message: error.message})
     }
 }
 
@@ -21,9 +21,11 @@ const getProduct = async (req,res) => {
     const product = await database.Productos.findAll({
             where:{ id:req.params.id }
         })
-        res.json(product[0])
+        res.json({data:product[0], message: "productos encontrados"})
     } catch (error) {
-        res.json( {message: error.message} )
+        res.json( {
+            data:[],
+            message: error.message} )
     }
 }
 
@@ -76,7 +78,7 @@ const shoesProduct = async (req, res) => {
             productsStock[req.params.id]++;
             return res.json('Unbooked');
         } else if (req.query.f === 'book') {
-            if (productsStock[req.params.id] == 0) return res.json('Stockout')//en caso de que el producto sea igual a 0 se notifica que se acabo
+            if (productsStock[req.params.id] == 0) return res.json('Stockout')
             productsStock[req.params.id]--;
             return res.json('Booked');
         } 

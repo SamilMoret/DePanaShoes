@@ -8,7 +8,7 @@ class Users extends Model {
 }
 Users.init(
     {
-    user_name: {
+    nome_usuario: {
         type: DataTypes.STRING,
         allowNull: false
     },
@@ -16,15 +16,15 @@ Users.init(
         type: DataTypes.STRING(128),
         allowNull: false
     },
-    password: {
+    senha: {
         allowNull: false,
         type: DataTypes.STRING(128),
     },
-    adress: {
+    endereco: {
         allowNull: false,
         type: DataTypes.STRING(128),
     },
-    telephone: {
+    telefone: {
         allowNull: false,
         type: DataTypes.STRING(128),
     },

@@ -4,7 +4,7 @@ import axios from 'axios';
 import { useState } from 'react';
 import { useEffect } from 'react';
 
-const URI = 'http://localhost:3001/products/'; 
+const URI = 'http://localhost:3001/products'; 
 
 export const EditProduct = () => {
 
@@ -15,7 +15,7 @@ export const EditProduct = () => {
 
     const getProduct = async () => {
         const res = await axios.get(URI)
-        setProducts(res.data)
+        setProducts(res.data.data)
     }
     return (
         <div className="shop">
