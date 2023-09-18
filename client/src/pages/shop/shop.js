@@ -26,7 +26,7 @@ export const Shop = () => {
             </div>
             <div className="products"> 
                 {!!productos && productos.map((product) => (
-                    <Product key={productos.id} data={product} />  
+                    <Product key={product.id} data={product} />  
                 ))}
             </div>
         </div>

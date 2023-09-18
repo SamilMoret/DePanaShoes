@@ -37,14 +37,14 @@ const Login = () => {
 
     const getUsers = async() => {
         const res = await axios.get(URI)
-        console.log(res.data);
-        setUsers(res.data)
+        console.log(res.data.data);
+        setUsers(res.data.data)
     }
 
 
 
     const compare = () => {
-            if (users.find(e => e.user_name === entrada && e.password === entradaP))
+            if (users.find(e => e.nome_usuario === entrada && e.senha === entradaP))
                 return true;
             else
                 return false;

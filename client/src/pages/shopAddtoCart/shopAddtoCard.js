@@ -16,7 +16,7 @@ export const ShopAddtoCart = () => {
 
     const getProducts = async () => {
         const res = await axios.get(URI)
-        setProducts(res.data)
+        setProducts(res.data.data)
     }
     return (
         <div className="shop">
@@ -25,7 +25,7 @@ export const ShopAddtoCart = () => {
             </div>
             <div className="products"> 
                 {products.map((product) => (
-                    <Product data={product} />
+                    <Product key={product.id} data={product} />
                 ))}
             </div>
         </div>

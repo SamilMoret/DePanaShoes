@@ -29,20 +29,20 @@ const EditAdmin = () => {
                 <input 
                 value={password}
                 onChange={ (e) => setPassword((e.target.value))}
-                type="password" name="pass" id="pass" placeholder="password"/>
+                type="password" name="senha" id="senha" placeholder="senha"/>
                 <input 
                 value={adress}
                 onChange={ (e) => setAdress(e.target.value)}
-                type="text" name="pass" id="pass" placeholder="adress"/>
+                type="text" name="endereço" id="endereço" placeholder="endereço"/>
                 <input 
                 value={telephone}
                 onChange={ (e) => setTelephone(e.target.value)}
-                type="text" name="pass" id="pass" placeholder="telephone"/>
+                type="text" name="telefone" id="telefone" placeholder="telefone"/>
                 <input 
                 value={email}
                 onChange={ (e) => setEmail(e.target.value)}
-                type="text" name="pass" id="pass" placeholder="email"/>
-                <input type="submit" className="btn-login" value="Edit" />
+                type="text" name="email" id="email" placeholder="email"/>
+                <input type="submit" className="btn-login" value="Editar" />
             </form>
         </div>
     )

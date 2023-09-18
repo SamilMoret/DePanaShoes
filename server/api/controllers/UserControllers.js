@@ -1,21 +1,24 @@
 const database = require('../models');
 const sequelize = require('sequelize')
+const {v4:uuid} = require("uuid")
 
 
 
 const getAllUsers = async (req,res) => {
     try {
         const User  = await database.Users.findAll()
-        res.json(User)
-    } catch (error) {
-        res.json({message: error.message})
+{        res.json({data:User, message:"usuarios encontrados"})
+}    } catch (error) {
+        res.json({
+            data:[],
+            message: error.message})
     }
 }
 
 
 const createUser = async (req,res) => {
     try {
-        await database.Users.create(req.body)
+        await database.Users.create({...req.body, id:uuid()})
         res.json({
             'message': 'registro creado'
         })

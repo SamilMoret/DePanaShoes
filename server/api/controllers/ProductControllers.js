@@ -6,6 +6,7 @@ const database = require('../models');
 const sequelize = require('sequelize')
 
 
+
 const getAllProducts = async (req,res) => {
     try {
         const products  = await database.Productos.findAll()

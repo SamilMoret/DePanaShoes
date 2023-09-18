@@ -24,7 +24,7 @@ export const EditProduct = () => {
             </div>
             <div className="products"> 
                 {products.map((product) => (
-                    <Product data={product} />
+                    <Product key={product.id} data={product} />
                 ))}
             </div>
         </div>

@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "type":"commonjs",
+  "type": "commonjs",
   "scripts": {
     "dev": "nodemon api/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -22,6 +22,7 @@
     "path": "^0.12.7",
     "sequelize": "^6.33.0",
     "sequelize-cli": "^6.6.1",
-    "stripe": "^13.5.0"
+    "stripe": "^13.5.0",
+    "uuid": "^9.0.1"
   }
 }

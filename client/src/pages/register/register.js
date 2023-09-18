@@ -28,7 +28,7 @@ const Register = () => {
 
     const getUsers = async() => {
         const res = await axios.get(URI)
-        setUsuario(res.data)
+        setUsuario(res.data.data)
     }
 
     const store = async (e) => { 
@@ -43,11 +43,11 @@ const Register = () => {
             <form onSubmit={store} action="/auth" method="post"> 
                 <input 
                 value={nome}
-                onChange={ (e) => users.find(event => event.username === e.target.value) ? navigateRegister() : setNome(e.target.value)}
+                onChange={ (e) => usuario.find(event => event.username === e.target.value) ? navigateRegister() : setNome(e.target.value)}
                 type="text" name="user" id="user" placeholder="Usuario" required/>
                 <input 
                 value={senha}
-                onChange={ (e) => setPassword((e.target.value))}
+                onChange={ (e) => setSenha((e.target.value))}
                 type="password" name="pass" id="pass" placeholder="Senha" required/>
                 <input 
                 value={endereco}
