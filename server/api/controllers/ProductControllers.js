@@ -1,5 +1,5 @@
 
-//import ProductModel from "../models/ProductModel.js";
+
 //import { productsStock, productMinStock } from "../server.js";
 //import { sendMail } from "../mail/mail.js";
 const database = require('../models');

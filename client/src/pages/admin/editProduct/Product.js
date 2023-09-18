@@ -32,7 +32,7 @@ export const Product = (props) => {
                 <p> 
                     <b>{nome}</b> 
                 </p>
-                <p> ${preco}</p>
+                <p> R${preco}</p>
                 <p> Max Stock: {stockMax}</p>
                 <p> Min Stock: {stockMin}</p>
                 <form onSubmit={update} action="/auth" method="post"> 
