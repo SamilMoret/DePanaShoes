@@ -1,4 +1,5 @@
 import React from "react";
+import "./shop.css"
 
 export const Product = (props) => {
     const { nome, preco, descricao, img1, img2, img3 } = props.data; 

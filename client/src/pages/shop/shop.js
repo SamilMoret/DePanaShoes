@@ -22,7 +22,7 @@ export const Shop = () => {
     return (
         <div className="shop">
             <div className="shopTitle">
-                <h1>DePanaShoes</h1>
+                <h2>DePanaShoes</h2>
             </div>
             <div className="products"> 
                 {!!productos && productos.map((product) => (

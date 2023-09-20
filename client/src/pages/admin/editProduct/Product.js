@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import axios from 'axios';
+import "./Product.css"
 
 const URI = 'http://localhost:3001/products/';
 
@@ -17,6 +18,7 @@ export const Product = (props) => {
     const update = async (e) => { 
         e.preventDefault();
         await axios.put(URI+id, { preco: priceHook, stockMax: maxStock, stockMin: minStock, img1:newimg1, img2:newimg2, img3:newimg3 });
+        window.location.reload()
     }
 
     return (

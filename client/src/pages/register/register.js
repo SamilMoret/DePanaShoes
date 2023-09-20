@@ -15,11 +15,11 @@ const Register = () => {
     const [usuario, setUsuario] = useState([]);
     const navigate = useNavigate();
     const navigateLogin = () => {
-        navigate(`/login`);//envia al login
+        navigate(`/login`);
     }
 
     const navigateRegister = () => {
-        navigate(`/register`);//envia al resgiter
+        navigate(`/register`);
     }
 
     useEffect(() => {

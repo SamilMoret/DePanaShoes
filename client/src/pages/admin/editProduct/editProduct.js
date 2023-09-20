@@ -20,7 +20,7 @@ export const EditProduct = () => {
     return (
         <div className="shop">
             <div className="shopTitle">
-                <h1>Editar Produtos</h1>
+                <h2>Editar Produtos</h2>
             </div>
             <div className="products"> 
                 {products.map((product) => (

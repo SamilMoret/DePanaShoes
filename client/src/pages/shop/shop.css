@@ -3,6 +3,7 @@
     margin-top: 100px;
     text-align: center;
     font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif
   }
   .products {
     width: 100vw;
@@ -56,6 +57,11 @@
     width: 100%;
  }
   
+.descripcion p {
+  font-size: 3.5vmin;
+  font-family: arial;
+}
+
   .product .description {
     text-align: center;
   }

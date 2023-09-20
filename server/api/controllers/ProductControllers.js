@@ -1,7 +1,6 @@
 
 
-//import { productsStock, productMinStock } from "../server.js";
-//import { sendMail } from "../mail/mail.js";
+const { productsStock, productMinStock } = require("../server.js");
 const database = require('../models');
 const sequelize = require('sequelize')
 

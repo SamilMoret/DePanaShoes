@@ -1,0 +1,16 @@
+.description p {
+    font-size: 3vmin;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0.5vmin;
+}
+
+input {
+    padding: 1vmin;
+    width: 40%;
+    border: 0.1vmin solid #57d5eba2;
+}
+
+.btn-login {
+    margin: 0;
+    border-radius: 0;
+}
