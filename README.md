@@ -1,11 +1,6 @@
 <div align= "center">
-<img src= "blob:https://web.whatsapp.com/40f90a86-febf-451c-b399-386f59793351" width="230px"/>
+<img src= "https://scontent.fcaw6-1.fna.fbcdn.net/v/t39.30808-6/381419616_6883997278330030_7796970078404558104_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=49d041&_nc_eui2=AeG1RqXHoibWf4Tdj6FQaxH-cJWPGArH4CZwlY8YCsfgJn5dBRNss6zwkVFIfqcRrADfdt00EsDaIX4nfczymjVb&_nc_ohc=o2nAF_jft9sAX-TTdMw&_nc_ht=scontent.fcaw6-1.fna&oh=00_AfDO83G15WKlzhba7ldzRs7wam0qyS0m2FJUHiRma-T1PA&oe=65114BCD" width="230px"/>
 </div> 
-
-<h1 align="center">
-    <br>
-    DePanaShoes
-</h1>
 
 <p align="center">
 <img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge"/>
@@ -124,7 +119,7 @@ A aplicação irá rodar no endereço [http://localhost:3000/].
               <img src="https://avatars.githubusercontent.com/u/82430136?v=4 width="150px;" alt="Sumaé Github Photo"/>
             </a>
             <br>
-            <a href="https://www.linkedin.com/in/gilbonett/">
+            <a href="linkedin.com/in/sumae-embalo-9831211a5">
               <sub>
                 <b>Sumaé Embaló</b>
               </sub>
