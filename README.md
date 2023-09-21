@@ -116,7 +116,7 @@ A aplicação irá rodar no endereço [http://localhost:3000/].
         <tr>
           <td align="center">
             <a href="https://avatars.githubusercontent.com/u/82430136?v=4">
-              <img src="https://avatars.githubusercontent.com/u/82430136?v=4 width="150px;" alt="Sumaé Github Photo"/>
+              <img src="https://avatars.githubusercontent.com/u/82430136?v=4 "width="150px;" alt="Sumaé Github Photo"/>
             </a>
             <br>
             <a href="linkedin.com/in/sumae-embalo-9831211a5">
