@@ -117,7 +117,7 @@ A aplicação irá rodar no endereço [http://localhost:3000/].
         <tr>
           <td align="center">
             <a href="https://github.com/gilbonett">
-              <img src="https://avatars.githubusercontent.com/u/101142283?s=400&u=65a54baa757bd9fd2fc3507447850d1f071002c5&v=4" width="150px;" alt="Pedro Github Photo"/>
+              <img src="![image](https://github.com/SamilMoret/DePanaShoes/assets/105180420/51eeba82-3065-47eb-909f-5f6747203fa7)" width="150px;" alt="Pedro Github Photo"/>
             </a>
             <br>
             <a href="https://www.linkedin.com/in/gilbonett/">
@@ -153,7 +153,7 @@ A aplicação irá rodar no endereço [http://localhost:3000/].
         <tr>
           <td align="center">
             <a href="https://github.com/JLbr2022">
-              <img src="https://avatars.githubusercontent.com/u/102869871?v=4" width="150px;" alt="Jose Github Photo"/>
+              <img src="![image](https://github.com/SamilMoret/DePanaShoes/assets/105180420/9d1985df-ac2a-440f-95ca-4ed0c4632442)" width="150px;" alt="Jose Github Photo"/>
             </a>
             <br>
             <a href="https://www.linkedin.com/in/jlfreites/">
