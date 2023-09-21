@@ -152,11 +152,11 @@ A aplicação irá rodar no endereço [http://localhost:3000/].
       <table>
         <tr>
           <td align="center">
-            <a href="https://github.com/JLbr2022">
-              <img src="![image](https://github.com/SamilMoret/DePanaShoes/assets/105180420/9d1985df-ac2a-440f-95ca-4ed0c4632442)" width="150px;" alt="Jose Github Photo"/>
+            <a href="https://github.com/breggette">
+              <img src="https://avatars.githubusercontent.com/u/131926512?v=4" width="150px;" alt="Jose Github Photo"/>
             </a>
             <br>
-            <a href="https://www.linkedin.com/in/jlfreites/">
+            <a href="https://www.linkedin.com/in/breggette-moncada-0bbb84287/">
               <sub>
                 <b>Jose Freites</b>
               </sub>
