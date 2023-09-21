@@ -158,7 +158,7 @@ A aplicação irá rodar no endereço [http://localhost:3000/].
             <br>
             <a href="https://www.linkedin.com/in/breggette-moncada-0bbb84287/">
               <sub>
-                <b>Jose Freites</b>
+                <b>Breggette Moncada</b>
               </sub>
             </a>
           </td>
