@@ -1,6 +1,10 @@
+<div align= "center">
+<img src= "blob:https://web.whatsapp.com/40f90a86-febf-451c-b399-386f59793351" width="230px"/>
+</div> 
+
 <h1 align="center">
     <br>
-    JobsMentors
+    DePanaShoes
 </h1>
 
 <p align="center">
@@ -12,7 +16,7 @@
 
 | :placard: Challenge |     |
 | -------------  | --- |
-| :sparkles: Nome        | **JobsMentors**
+| :sparkles: Nome        | **DePanaShoes**
 | :label: Tecnologias Front-end | React, JavaScript.
 | :label: Tecnologias Back-end | Nodejs , Express, Sequelize, MySQL.
 | :rocket: URL         | https://app/
