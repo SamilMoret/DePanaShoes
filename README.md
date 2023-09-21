@@ -6,7 +6,7 @@
 <img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge"/>
 </p>
 <p align="center">
-"Conectando talentos, orientando carreiras"
+"Simplifica sua vida"
 </p> 
 
 | :placard: Challenge |     |
@@ -14,8 +14,8 @@
 | :sparkles: Nome        | **DePanaShoes**
 | :label: Tecnologias Front-end | React, JavaScript.
 | :label: Tecnologias Back-end | Nodejs , Express, Sequelize, MySQL.
-| :rocket: URL         | https://app/
-| :fire: Desafio     | Construção de um produto digital que busque solucionar a empregabilidade de pessoas refugiadas e migrantes
+| :fire: Desafio     | Desenvolvimento de um Sistema de Back-End e Base de Dados para uma Loja Online
+
 
 <h3>Tópicos</h3>
 
@@ -29,14 +29,15 @@
 
 <a href="#Dev">Desenvolvedores</a>
 
-![](https://github.com/gilbonett/server/assets/101142283/c2d2328e-76d2-4058-987d-e5f4d35c6a9e)
+
 
 <h2 id= Cred> Creditos e Agredecimientos</h2>
 
-Este projeto é o resultado da nossa participação na 1ª edição do Challenge da Toti. Por meio de uma abordagem de aprendizado baseado em Workshops praticos para fortalecer habilidades e exercitar competencias tecnicas resolvendo um desafio de desenvolvimento web.
-O desafio foi proposto pela [**Toti**](https://totidiversidade.com.br/), uma escola de tecnologia e inclusão de pessoas refugiadas e migrantes no mercado de trabalho de tecnologia.
+Este projeto é o resultado da nossa participação no curso de Back End turma 32 da Toti. 
 
-Existe toda uma equipe da Toti por trás do desafio, sendo nosso contato maior com a comunidade da Toti. Nosso muito obrigado a todos.
+O desafio foi proposto pela [**Toti**](https://totidiversidade.com.br/) a quem agradecemos pela oportunidade de participar deste curso
+
+Nosso muito obrigado a todos.
 
 <h2 id= Descrip> O que é DePanaShoes?</h2>
 
@@ -57,9 +58,7 @@ O objetivo principal deste projeto é criar um sistema de back-end e uma base de
 - Fornecer relatórios de vendas e análises para tomada de decisões.
 
 - Garantir a segurança e integridade dos dados do cliente.
-
-
-**Atenção:** O site é **responsivo** para dar aos usuarios a facilidade de usar através de dispositivos mobiles.
+.
 
 <h2 id= modelo> Modelagem do Banco de Dados</h2>
 
@@ -69,13 +68,17 @@ O objetivo principal deste projeto é criar um sistema de back-end e uma base de
 
 As principais tecnologias utilizadas foram:
 
-- react 18.1
-- node v18.14.0;
-- npm v9.3.1;
-- bcrypt 5.1.0;
-- jsonwebtoken 9.0.0;
-- mysql2 3.3.0
-- sequelize 6.31.1
+- "axios": "^1.5.0",
+- "phosphor-react": "^1.4.1",
+- "react": "18.2.0",
+- "react-dom": "18.2.0",
+- "react-router-dom": "^6.15.0",
+- "react-scripts": "^5.0.1",
+- "express": "^4.18.2",
+- "mysql2": "^3.6.0",
+- "nodemailer": "^6.9.5",
+- "nodemon": "^3.0.1",
+- "sequelize": "^6.33.0",
 
 Demais tecnologias podem ser vistas nas dependências do `package.json`.
 
@@ -92,11 +95,11 @@ Após clonar/baixar o projeto, abra um terminal, navegue até a pasta /client e 
 Após isso, você pode rodar a aplicação em modo de desenvolvimento com o seguinte comando:
 
     npm run dev
-A aplicação irá rodar no endereço [http://localhost:5173/].
+A aplicação irá rodar no endereço [http://localhost:3000/].
 
 ## Instalação Back-End
 
-O projeto foi criado con Express, Sequelize, MySQL, bcrypt, jsonwebtoken. Utilizando Node.js e npm. É necessário estar com ambos instalados em sua máquina para rodar a aplicação.
+O projeto foi criado con Express, Sequelize, MySQL. Utilizando Node.js e npm. É necessário estar com ambos instalados em sua máquina para rodar a aplicação.
 
 Após clonar/baixar o projeto, abra um terminal, navegue até a pasta /server e rode o seguinte comando para instalar todas as dependências necessárias:
 
@@ -105,7 +108,7 @@ Após clonar/baixar o projeto, abra um terminal, navegue até a pasta /server e 
 Após isso, você pode rodar a aplicação em modo de desenvolvimento com o seguinte comando:
 
     npm run dev
-A aplicação irá rodar no endereço [http://localhost:3000/].
+A aplicação irá rodar no endereço [http://localhost:3001/].
 
 <h2 id= Dev>Desenvolvedores</h2>
 <table>
@@ -170,6 +173,3 @@ A aplicação irá rodar no endereço [http://localhost:3000/].
 
 
 
-## Desenvolvimento
-
-Você pode [ver o projeto online clicando aqui](https://.app/).
