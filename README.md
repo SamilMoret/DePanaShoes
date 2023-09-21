@@ -166,24 +166,6 @@ A aplicação irá rodar no endereço [http://localhost:3000/].
       </table>
     </td>
     <td>
-      <!-- Quarto card -->
-      <table>
-        <tr>
-          <td align="center">
-            <a href="https://github.com/colmenareshr">
-              <img src="https://avatars.githubusercontent.com/u/14103160?v=4" width="150px;" alt="Humberto Github Photo"/>
-            </a>
-            <br>
-            <a href="https://www.linkedin.com/in/humbertocolmenares/">
-              <sub>
-                <b>Humberto Colmenares</b>
-              </sub>
-            </a>
-          </td>
-        </tr>
-      </table>
-    </td>
-  </tr>
 </table>
 
 
