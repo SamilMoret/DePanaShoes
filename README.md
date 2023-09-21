@@ -1,5 +1,5 @@
 <div align= "center">
-<img src= "https://scontent.fcaw6-1.fna.fbcdn.net/v/t39.30808-6/381419616_6883997278330030_7796970078404558104_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=49d041&_nc_eui2=AeG1RqXHoibWf4Tdj6FQaxH-cJWPGArH4CZwlY8YCsfgJn5dBRNss6zwkVFIfqcRrADfdt00EsDaIX4nfczymjVb&_nc_ohc=o2nAF_jft9sAX-TTdMw&_nc_ht=scontent.fcaw6-1.fna&oh=00_AfDO83G15WKlzhba7ldzRs7wam0qyS0m2FJUHiRma-T1PA&oe=65114BCD" width="230px"/>
+<img src= "https://github.com/SamilMoret/DePanaShoes/blob/main/client/public/assets/img/DepanaShoes.png" width="230px"/>
 </div> 
 
 <p align="center">
