@@ -62,7 +62,7 @@ O objetivo principal deste projeto é criar um sistema de back-end e uma base de
 
 <h2 id= modelo> Modelagem do Banco de Dados</h2>
 
-![](https://github.com/gilbonett/server/assets/101142283/d789e55b-fbc4-4ee6-8e3c-0ddd54b06f45)
+
 
 <h2 id= Tec>Tecnologias</h2>
 
