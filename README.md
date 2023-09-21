@@ -116,13 +116,13 @@ A aplicação irá rodar no endereço [http://localhost:3000/].
       <table>
         <tr>
           <td align="center">
-            <a href="https://github.com/gilbonett">
-              <img src="![image](https://github.com/SamilMoret/DePanaShoes/assets/105180420/51eeba82-3065-47eb-909f-5f6747203fa7)" width="150px;" alt="Pedro Github Photo"/>
+            <a href="https://avatars.githubusercontent.com/u/82430136?v=4">
+              <img src="https://avatars.githubusercontent.com/u/82430136?v=4 width="150px;" alt="Sumaé Github Photo"/>
             </a>
             <br>
             <a href="https://www.linkedin.com/in/gilbonett/">
               <sub>
-                <b>Pedro Gil Bonett</b>
+                <b>Sumaé Embaló</b>
               </sub>
             </a>
           </td>
@@ -153,7 +153,7 @@ A aplicação irá rodar no endereço [http://localhost:3000/].
         <tr>
           <td align="center">
             <a href="https://github.com/breggette">
-              <img src="https://avatars.githubusercontent.com/u/131926512?v=4" width="150px;" alt="Jose Github Photo"/>
+              <img src="https://avatars.githubusercontent.com/u/131926512?v=4" width="150px;" alt="Breggette Github Photo"/>
             </a>
             <br>
             <a href="https://www.linkedin.com/in/breggette-moncada-0bbb84287/">
