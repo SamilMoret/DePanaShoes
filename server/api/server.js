@@ -1,24 +1,31 @@
 const express = require('express');
-const productRoutes = require('./routes/productRoutes');
-const userRoutes = require('./routes/userRoutes');
 const sequelize = require('./config/database');
+const productRoutes = require('./routes/productRoutes');
 
 const app = express();
 
+// Middlewares
 app.use(express.json());
 
-app.use('/products', productRoutes);
-app.use('/users', userRoutes);
+// Routes
+app.use('/api/products', productRoutes);
 
-app.get('/', (req, res) => {
-    res.send('API DePanaShoes funcionando!');
-});
+// Conexão com o banco e inicialização do servidor
+const PORT = process.env.PORT || 3000;
 
-// Sincroniza o banco de dados e inicia o servidor
-sequelize.sync().then(() => {
-    app.listen(3000, () => {
-        console.log('Servidor rodando na porta 3000');
-    });
-}).catch((error) => {
-    console.error('Erro ao conectar ao banco de dados:', error);
-});
+sequelize.sync()
+  .then(() => {
+    console.log('✅ Banco de dados conectado e sincronizado');
+    if (process.env.NODE_ENV !== 'test') {
+      const server = app.listen(PORT, () => {
+        console.log(`🚀 Servidor rodando na porta ${PORT}`);
+      });
+      return server;
+    }
+  })
+  .catch((error) => {
+    console.error('❌ Erro ao conectar ao banco de dados:', error);
+  });
+
+// ✅ EXPORTE o app para testes
+module.exports = app;
