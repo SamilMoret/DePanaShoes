@@ -2,7 +2,7 @@
   "name": "depanashoes",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "type": "commonjs",
   "scripts": {
     "dev": "nodemon api/server.js",

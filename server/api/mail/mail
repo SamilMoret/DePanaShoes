@@ -1,4 +1,4 @@
-import nodemailer from 'nodemailer'; 
+const nodemailer = require('nodemailer');
 
 
 const transporter = nodemailer.createTransport({
@@ -20,4 +20,6 @@ export const sendMail = prod => {
         text: `The following product's stock which id's is${prod.id}. is almost empty`
     }).then(console.info)
     .catch(console.catch)
-}
+};
+
+module.exports = { sendMail };

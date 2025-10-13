@@ -1,54 +1,27 @@
-'use strict';
-const { Model } = require('sequelize');
-module.exports = (sequelize, DataTypes) => {
-class Productos extends Model {
-    static associate(models) {
-        //
-    }
-}
-Productos.init(
-    {
-    nome: {
+const { DataTypes } = require('sequelize');
+const sequelize = require('../config/database');
+
+const Product = sequelize.define('Product', {
+    name: {
         type: DataTypes.STRING,
-        allowNull: false
-    },
-    preco: {
-        type: DataTypes.INTEGER(128),
-        allowNull: false
-    },
-    descricao: {
         allowNull: false,
-        type: DataTypes.TEXT,
     },
-    img1: {
+    price: {
+        type: DataTypes.FLOAT,
         allowNull: false,
-        type: DataTypes.TEXT,
-    },
-    img2: {
-        allowNull: false,
-        type: DataTypes.TEXT,
-    },
-    img3: {
-        allowNull: false,
-        type: DataTypes.TEXT,
-    },
-    stockMax: {
-        allowNull: false,
-        type: DataTypes.INTEGER,
-    },
-    stockMin: {
-        allowNull: false,
-        type: DataTypes.INTEGER,
     },
     stock: {
-        allowNull: false,
         type: DataTypes.INTEGER,
+        allowNull: false,
     },
+    description: {
+        type: DataTypes.STRING,
+        allowNull: true,
     },
-    {
-    sequelize,
-    modelName: 'Productos',
+    image: {
+        type: DataTypes.STRING,
+        allowNull: true,
     }
-);
-return Productos;
-};
+});
+
+module.exports = Product;
